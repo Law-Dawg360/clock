@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         const month = String(now2.getMonth() + 1);
         const day = String(now2.getDate());
-        const year = String(now2.getYear());
+        const year = String(now2.getFullYear());
 
         dateElement.textContent = `{month}/{day}/{year}`;
     }
