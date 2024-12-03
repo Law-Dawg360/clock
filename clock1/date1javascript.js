@@ -4,8 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const now2 = new Date();
 
         const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-        const month = String(now2.getMonth());
-        let month = months[month.getMonth()];
+        let month = months[now2.getMonth()];
         const day = String(now2.getDate());
         const year = String(now2.getFullYear());
 
