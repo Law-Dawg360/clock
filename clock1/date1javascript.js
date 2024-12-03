@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
         const month = months[now2.getMonth()];
         const day = String(now2.getDate()).padStart(2, '0'); // Ensure two-digit format
-        const year = String(now2.getFullYear());
+        const year = String(now2.getFullYear()).slice(-2); // Get last two digits
 
         dateElement.textContent = `${month}/${day}/${year}`;
     }
