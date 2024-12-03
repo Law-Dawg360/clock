@@ -10,10 +10,11 @@ document.addEventListener('DOMContentLoaded', () => {
         clockElement.textContent = `${hours}:${minutes}:${seconds}`;
 
         const dateElement = document.getElementById('date');
+        const now2 = new Date();
         
-        const month = String(now.getMonth()).padStart(2, '0');
-        const day = String(now.getDate()).padStart(2, '0');
-        const year = String(now.getYear()).padStart(2, '0');
+        const month = String(now2.getMonth());
+        const day = String(now2.getDate());
+        const year = String(now2.getYear());
 
         dateElement.textContent = `${month}/${day}/${year}`;
     }
