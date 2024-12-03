@@ -1,5 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
-    function updateDate() {
+function updateDate() {
         const dateElement = document.getElementById('date');
         const now2 = new Date();
 
@@ -13,4 +12,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setInterval(updateDate, 1000);
     updateDate();
-});
