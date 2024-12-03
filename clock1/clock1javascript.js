@@ -25,8 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
         dateElement.textContent = `${month}/${day}/${year}`;
     }
 
-    setInterval(updateClock, 1000);
-    updateClock();
     setInterval(updateDate, 1000);
     updateDate();
 });
