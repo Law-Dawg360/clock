@@ -8,6 +8,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const seconds = String(now.getSeconds()).padStart(2, '0');
 
         clockElement.textContent = `${hours}:${minutes}:${seconds}`;
+
+        const dateElement = document.getElementById('date');
+        
+        const month = String(now.getMonth()).padStart(2, '0');
+        const day = String(now.getDate()).padStart(2, '0');
+        const year = String(now.getYear()).padStart(2, '0');
+
+        dateElement.textContent = `${month}/${day}/${year}`;
     }
 
     setInterval(updateClock, 1000);
