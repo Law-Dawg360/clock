@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const dateElement = document.getElementById('date');
         const now2 = new Date();
         
-        const month = String(now2.getMonth());
+        const month = String(now2.getMonth() + 1);
         const day = String(now2.getDate());
         const year = String(now2.getYear());
 
