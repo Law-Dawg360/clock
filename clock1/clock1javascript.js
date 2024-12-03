@@ -8,7 +8,13 @@ document.addEventListener('DOMContentLoaded', () => {
         const seconds = String(now.getSeconds()).padStart(2, '0');
 
         clockElement.textContent = `${hours}:${minutes}:${seconds}`;
+    }
 
+    setInterval(updateClock, 1000);
+    updateClock();
+});
+document.addEventListener('DOMContentLoaded', () => {
+    function updateDate() {
         const dateElement = document.getElementById('date');
         const now2 = new Date();
         
@@ -21,4 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setInterval(updateClock, 1000);
     updateClock();
+    setInterval(updateDate, 1000);
+    updateDate();
 });
