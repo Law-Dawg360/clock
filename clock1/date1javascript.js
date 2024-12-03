@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const day = String(now2.getDate());
         const year = String(now2.getFullYear());
 
-        dateElement.textContent = `{month}/{day}/{year}`;
+        dateElement.textContent = `${month}/${day}/${year}`;
     }
 
     setInterval(updateDate, 1000);
