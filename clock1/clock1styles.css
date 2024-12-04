@@ -17,7 +17,11 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 30px rgba(0, 255, 0, 0.5);
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 .digital-clockSmall {
     color: #00ff00;
     font-size: 2.5rem;
@@ -26,5 +30,6 @@ body {
     padding: 10px 20px;
     border-radius: 5px;
     box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+    margin-top: 10px;
     text-align: center;
 }
