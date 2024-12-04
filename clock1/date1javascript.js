@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
         dateElement.firstChild.textContent = `${month}/${day}/${year}`;
 
         // Update long date format in the child container
-        dateLongFormElement.textContent = `${monthLong} ${day}, ${now2.getFullYear()}`;
+        dateLongFormElement.textContent = `${monthLong} ${now2.getDate()}, ${now2.getFullYear()}`;
     }
 
     setInterval(updateDate, 1000);
