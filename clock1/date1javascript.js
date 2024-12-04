@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const day = String(now2.getDate()).padStart(2, '0'); // Ensure two-digit format
         const year = String(now2.getFullYear()).slice(-2); // Get last two digits
 
-        dateElement.textContent = `${month}/${day}/${year}`;
+        dateElement.textContent = `${month}/${day}/${year}\n${monthLong} ${day}, ${year}`;
         const dateLongFormElement = document.getElementById('dateLongForm');
         dateLongFormElement.textContent = `${monthLong} ${day}, ${year}`;
     }
